@@ -31,7 +31,7 @@ export default function Home() {
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
             <span className="font-bold Aliyan-Dev text-[3rem]">
-              Welcome To <span className="text-blue-600">&lt;/&gt;</span>Aliyan
+              <h1>Welcome To <span className="text-blue-600">&lt;/&gt;</span>Aliyan</h1>
               <span className="text-blue-600">Devs</span>
             </span>{" "}
             <br />{" "}

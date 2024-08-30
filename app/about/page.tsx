@@ -44,7 +44,7 @@ export default function About() {
           <div className="space-y-12">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3">
-                <img src="/Logo1.png" alt="Aliyan as a beginner" className="w-full rounded-lg shadow-lg" />
+                <Image src="/Logo1.png" alt="Aliyan as a beginner" className="w-full rounded-lg shadow-lg" />
               </div>
               <div className="md:w-2/3 md:pl-8 mt-8 md:mt-0">
                 <h3 className="text-2xl font-bold dark:text-white text-gray-800">The Spark of Curiosity</h3>
@@ -56,7 +56,7 @@ export default function About() {
 
             <div className="flex flex-col md:flex-row-reverse items-center">
               <div className="md:w-1/3">
-                <img src="/Logo1.png" alt="Aliyan learning new skills" className="w-full rounded-lg shadow-lg" />
+                <Image src="/Logo1.png" alt="Aliyan learning new skills" className="w-full rounded-lg shadow-lg" />
               </div>
               <div className="md:w-2/3 md:pr-8 mt-8 md:mt-0">
                 <h3 className="text-2xl font-bold dark:text-white text-gray-800">Diving Deeper</h3>
@@ -68,7 +68,7 @@ export default function About() {
 
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3">
-                <img src="/Logo1.png" alt="Aliyan working on a big project" className="w-full rounded-lg shadow-lg" />
+                <Image src="/Logo1.png" alt="Aliyan working on a big project" className="w-full rounded-lg shadow-lg" />
               </div>
               <div className="md:w-2/3 md:pl-8 mt-8 md:mt-0">
                 <h3 className="text-2xl font-bold dark:text-white text-gray-800">Taking on Challenges</h3>
