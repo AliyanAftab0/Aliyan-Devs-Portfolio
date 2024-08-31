@@ -2,10 +2,14 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div>
+    <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+        rel="stylesheet"
+      />
+    <div>
       <div className="flex flex-col items-center Aliyan-Dev justify-center py-32 dark:bg-slate-950 bg-gray-100 ">
         <div className="w-full max-w-4xl p-8 bg-white dark:bg-slate-900 shadow-lg rounded-lg">
           <div className="flex flex-col md:flex-row">
@@ -14,7 +18,8 @@ export default function About() {
                 <Image
                   src="/Logo1.png"
                   alt="Profile"
-                  layout="fill"
+                  width={200}
+                  height={200}
                   objectFit="cover"
                   className="rounded-full"
                 />
@@ -44,7 +49,7 @@ export default function About() {
           <div className="space-y-12">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3">
-                <Image src="/Logo1.png" alt="Aliyan as a beginner" className="w-full rounded-lg shadow-lg" />
+                <Image src="/Logo1.png" alt="Aliyan as a beginner" width={500} height={500} className="w-full rounded-lg shadow-lg" />
               </div>
               <div className="md:w-2/3 md:pl-8 mt-8 md:mt-0">
                 <h3 className="text-2xl font-bold dark:text-white text-gray-800">The Spark of Curiosity</h3>
@@ -56,7 +61,7 @@ export default function About() {
 
             <div className="flex flex-col md:flex-row-reverse items-center">
               <div className="md:w-1/3">
-                <Image src="/Logo1.png" alt="Aliyan learning new skills" className="w-full rounded-lg shadow-lg" />
+                <Image src="/Logo1.png" alt="Aliyan learning new skills" width={500} height={500} className="w-full rounded-lg shadow-lg" />
               </div>
               <div className="md:w-2/3 md:pr-8 mt-8 md:mt-0">
                 <h3 className="text-2xl font-bold dark:text-white text-gray-800">Diving Deeper</h3>
@@ -68,7 +73,7 @@ export default function About() {
 
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3">
-                <Image src="/Logo1.png" alt="Aliyan working on a big project" className="w-full rounded-lg shadow-lg" />
+                <Image src="/Logo1.png" alt="Aliyan working on a big project" width={500} height={500} className="w-full rounded-lg shadow-lg" />
               </div>
               <div className="md:w-2/3 md:pl-8 mt-8 md:mt-0">
                 <h3 className="text-2xl font-bold dark:text-white text-gray-800">Taking on Challenges</h3>
@@ -80,7 +85,7 @@ export default function About() {
           </div>
         </div>
       </section>
-
     </div>
+    </>
   );
 }

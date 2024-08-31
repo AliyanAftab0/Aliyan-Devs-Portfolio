@@ -38,7 +38,7 @@ const NavBar = () => {
     setTimeout(() => {
       setProgress(0);
     }, 900);
-  }, []);
+  }, []); 
 
   const handleLinkClick = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

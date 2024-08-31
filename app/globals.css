@@ -1,8 +1,14 @@
+/* Import Tailwind base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Import the New Amsterdam font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+/* Base Layer Styles */
 @layer base {
+  /* Set root variables for light and dark mode */
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -31,6 +37,7 @@
     --chart-5: 27 87% 67%;
   }
 
+  /* Dark Mode Variables */
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -57,17 +64,20 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
 
-@layer base {
+  /* Apply base styles */
   * {
     @apply border-border;
   }
+
+  /* Apply global body styles including font */
   body {
+    font-family: "New Amsterdam", sans-serif;
     @apply bg-background text-foreground;
   }
 }
 
+/* Custom class for New Amsterdam font */
 .Aliyan-Dev {
   font-family: "New Amsterdam", sans-serif;
   font-weight: 400;

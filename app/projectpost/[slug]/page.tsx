@@ -24,7 +24,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
   if (!project) {
     return <div>Project not found</div>
   }
-
+ 
   const processor = unified()
     .use(remarkParse)
     .use(remarkRehype)

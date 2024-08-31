@@ -6,7 +6,7 @@ interface LinkType{
     id: string 
     text: string
 }
-
+ 
 const Onthispage = ({htmlContent, className}: {htmlContent: string, className: string}) => {
     const [links, setLinks] = useState<null|LinkType[]>(null);
 

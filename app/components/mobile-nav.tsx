@@ -70,7 +70,7 @@ const MobileNav = () => {
         >
           <Link href={"#contact"}>Contact</Link>
         </li>
-      </ul>
+      </ul> 
     </div>
   );
 };
