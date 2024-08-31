@@ -62,7 +62,7 @@ interface ProjectType1 {
   - Contact form
   - Responsive design
       `,
-      liveUrl: "",
+      liveUrl: "https://aliyan-dev.vercel.app/",
       imageUrl: "/aliyandev.png"
     },
     {
