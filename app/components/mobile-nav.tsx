@@ -52,7 +52,7 @@ const MobileNav = () => {
           }`}
           onClick={() => handleLinkClick("about")}
         >
-          <Link href={"#about"}>About</Link>
+          <Link href={"/about"}>About</Link>
         </li>
         <li
           className={`py-4 ${
@@ -60,7 +60,7 @@ const MobileNav = () => {
           }`}
           onClick={() => handleLinkClick("projects")}
         >
-          <Link href={"#projects"}>Projects</Link>
+          <Link href={"/projects"}>Projects</Link>
         </li>
         <li
           className={`py-4 ${
@@ -68,7 +68,7 @@ const MobileNav = () => {
           }`}
           onClick={() => handleLinkClick("contact")}
         >
-          <Link href={"#contact"}>Contact</Link>
+          <Link href={"/contact"}>Contact</Link>
         </li>
       </ul> 
     </div>

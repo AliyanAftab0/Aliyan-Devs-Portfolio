@@ -96,7 +96,7 @@ const NavBar = () => {
             }`}
             onClick={() => handleLinkClick("about")}
           >
-            <Link href={"about"}>About</Link>
+            <Link href={"/about"}>About</Link>
           </li>
           <li
             className={`hover:border-b-2 border-blue-600 ${
@@ -104,7 +104,7 @@ const NavBar = () => {
             }`}
             onClick={() => handleLinkClick("projects")}
           >
-            <Link href={"projects"}>Projects</Link>
+            <Link href={"/projects"}>Projects</Link>
           </li>
           <li
             className={`hover:border-b-2 border-blue-600 ${
@@ -112,7 +112,7 @@ const NavBar = () => {
             }`}
             onClick={() => handleLinkClick("contact")}
           >
-            <Link href={"contact"}>Contact</Link>
+            <Link href={"/contact"}>Contact</Link>
           </li>
           <ModeToggle />
         </ul>
