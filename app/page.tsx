@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Web Developer.", "Web Designer.", "Mobile Developer."],
+      strings: ["Web Developer.", "Web Designer.", "&amp; Python Developer"],
       typeSpeed: 50,
       loop: true,
     });

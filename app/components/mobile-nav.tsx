@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
 const MobileNav = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -21,7 +20,7 @@ const MobileNav = () => {
           }
         });
       },
-      { threshold: 0.6 }
+      { threshold: 0.5 } // Detect section as active when 50% visible
     );
 
     sections.forEach((section) => {
@@ -36,45 +35,53 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center space-y-6 sm:hidden">
-      <ul className="text-md Aliyan-Dev">
+    <div className="flex flex-col items-center space-y-4 sm:hidden">
+      <ul className="text-lg font-medium Aliyan-Dev">
         <li
-          className={`py-4 ${
-            activeSection === "home" ? "border-b-4 border-blue-600" : ""
+          className={`py-3 text-lg ${
+            activeSection === "/"
+              ? "text-blue-600"
+              : ""
           } transition-all duration-300 ease-in-out`}
           onClick={() => handleLinkClick("home")}
         >
-          <Link href={"/"} className="hover:text-blue-600">
+          <Link href="/" scroll={false} className="hover:text-blue-600">
             Home
           </Link>
         </li>
         <li
-          className={`py-4 ${
-            activeSection === "about" ? "border-b-4 border-blue-600" : ""
+          className={`py-3 text-lg ${
+            activeSection === "about"
+              ? "text-blue-600"
+              : ""
           } transition-all duration-300 ease-in-out`}
           onClick={() => handleLinkClick("about")}
         >
-          <Link href={"/about"} className="hover:text-blue-600">
+          <Link href="/about" scroll={false} className="hover:text-blue-600">
             About
           </Link>
         </li>
         <li
-          className={`py-4 ${
-            activeSection === "projects" ? "border-b-4 border-blue-600" : ""
+          className={`py-3 text-lg ${
+            activeSection === "projects"
+              ? "text-blue-600"
+              : ""
           } transition-all duration-300 ease-in-out`}
           onClick={() => handleLinkClick("projects")}
         >
-          <Link href={"/projects"} className="hover:text-blue-600">
+          <Link href="/projects" scroll={false} className="hover:text-blue-600">
             Projects
           </Link>
         </li>
         <li
-          className={`py-4 ${
-            activeSection === "contact" ? "border-b-4 border-blue-600" : ""
+          className={`py-3 text-lg ${
+            activeSection === "contact"
+              ? "text-blue-600"
+              : ""
           } transition-all duration-300 ease-in-out`}
           onClick={() => handleLinkClick("contact")}
         >
-          <Link href={"/contact"} className="hover:text-blue-600">
+          <Link href="/contact" scroll={false} className="hover:text-blue-600">
             Contact
           </Link>
         </li>

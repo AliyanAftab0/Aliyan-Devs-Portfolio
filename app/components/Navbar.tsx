@@ -5,9 +5,6 @@ import { ModeToggle } from "./Theme-Toggle";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import LoadingBar from "react-top-loading-bar";
@@ -20,7 +17,7 @@ const NavBar = () => {
   const [progress, setProgress] = useState(0);
   const pathname = usePathname();
 
-  // This runs whenever page changes to some other page
+  // This runs whenever the page changes to some other page
   useEffect(() => {
     setProgress(30);
 
@@ -33,12 +30,12 @@ const NavBar = () => {
     }, 800);
   }, [pathname]);
 
-  // This runs whenever page loads
+  // This runs whenever the page loads
   useEffect(() => {
     setTimeout(() => {
       setProgress(0);
     }, 900);
-  }, []); 
+  }, []);
 
   const handleLinkClick = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -78,46 +75,47 @@ const NavBar = () => {
       />
       <div className="text-lg font-bold Aliyan-Dev md:text-2xl">
         <Link href={"/"}>
-          <span className="text-blue-600">&lt;/&gt;</span>Aliyan<span className="text-blue-600">Devs</span>
+          <span className="text-blue-600">&lt;/&gt;</span>Aliyan
+          <span className="text-blue-600">Devs</span>
         </Link>
       </div>
       <ul className="md:flex w-full justify-end items-center Aliyan-Dev text-lg hidden space-x-4">
-          <li
-            className={`hover:border-b-2 border-blue-600 ${
-              activeSection === "home" ? "border-b-2 border-blue-600" : ""
-            }`}
-            onClick={() => handleLinkClick("home")}
-          >
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li
-            className={`hover:border-b-2 border-blue-600 ${
-              activeSection === "about" ? "border-b-2 border-blue-600" : ""
-            }`}
-            onClick={() => handleLinkClick("about")}
-          >
-            <Link href={"/about"}>About</Link>
-          </li>
-          <li
-            className={`hover:border-b-2 border-blue-600 ${
-              activeSection === "projects" ? "border-b-2 border-blue-600" : ""
-            }`}
-            onClick={() => handleLinkClick("projects")}
-          >
-            <Link href={"/projects"}>Projects</Link>
-          </li>
-          <li
-            className={`hover:border-b-2 border-blue-600 ${
-              activeSection === "contact" ? "border-b-2 border-blue-600" : ""
-            }`}
-            onClick={() => handleLinkClick("contact")}
-          >
-            <Link href={"/contact"}>Contact</Link>
-          </li>
-          <ModeToggle />
-        </ul>
+        <li
+          className={`hover:border-b-2 border-blue-600 ${
+            activeSection === "home" ? "border-b-2 border-blue-600" : ""
+          }`}
+          onClick={() => handleLinkClick("home")}
+        >
+          <Link href={"/"} scroll={false}>Home</Link>
+        </li>
+        <li
+          className={`hover:border-b-2 border-blue-600 ${
+            activeSection === "about" ? "border-b-2 border-blue-600" : ""
+          }`}
+          onClick={() => handleLinkClick("about")}
+        >
+          <Link href={"/about"} scroll={false}>About</Link>
+        </li>
+        <li
+          className={`hover:border-b-2 border-blue-600 ${
+            activeSection === "projects" ? "border-b-2 border-blue-600" : ""
+          }`}
+          onClick={() => handleLinkClick("projects")}
+        >
+          <Link href={"/projects"} scroll={false}>Projects</Link>
+        </li>
+        <li
+          className={`hover:border-b-2 border-blue-600 ${
+            activeSection === "contact" ? "border-b-2 border-blue-600" : ""
+          }`}
+          onClick={() => handleLinkClick("contact")}
+        >
+          <Link href={"/contact"} scroll={false}>Contact</Link>
+        </li>
+        <ModeToggle />
+      </ul>
       <div className="flex items-center space-x-3 justify-center sm:hidden">
-      <ModeToggle />
+        <ModeToggle />
         <Sheet>
           <SheetTrigger>
             <Menu />
