@@ -103,6 +103,26 @@ interface ProjectType1 {
       liveUrl: "https://github.com/AliyanAftab0/AI-Chat-Bot",
       imageUrl: "/aichatbot.png"
     },
+    {
+      slug: "resume generator",
+      title: "Resume Generator",
+      description: "Create and customize professional resumes with real-time editing and image uploads. Designed for responsive, high-quality outputs.",
+      technologies: ["Next.js", "React", "Tailwind CSS"],
+      content: `
+      #Resume Generator
+      
+      The Resume Generator is a tool for creating professional resumes with real-time editing and image upload features. It offers a user-friendly experience, allowing seamless customization and responsive, high-quality outputs.
+
+      ###Features:
+      - Real-time field editing
+      - Image upload capability
+      - Professional, customizable templates
+      - Responsive design for various devices
+      `,
+
+      liveUrl: "https://resume-builder-blue-eight.vercel.app/",
+      imageUrl: "/resume.png"
+    },
   ];
   
   export default SampleProjects;
