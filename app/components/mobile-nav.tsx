@@ -75,6 +75,18 @@ const MobileNav = () => {
         </li>
         <li
           className={`py-3 text-lg ${
+            activeSection === "blogs"
+              ? "text-blue-600"
+              : ""
+          } transition-all duration-300 ease-in-out`}
+          onClick={() => handleLinkClick("blogs")}
+        >
+          <Link href="/blogs" scroll={false} className="hover:text-blue-600">
+            Blogs
+          </Link>
+        </li>
+        <li
+          className={`py-3 text-lg ${
             activeSection === "contact"
               ? "text-blue-600"
               : ""

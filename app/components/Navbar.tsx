@@ -106,6 +106,14 @@ const NavBar = () => {
         </li>
         <li
           className={`hover:border-b-2 border-blue-600 ${
+            activeSection === "blogs" ? "border-b-2 border-blue-600" : ""
+          }`}
+          onClick={() => handleLinkClick("blogs")}
+        >
+          <Link href={"/blogs"} scroll={false}>Blogs</Link>
+        </li>
+        <li
+          className={`hover:border-b-2 border-blue-600 ${
             activeSection === "contact" ? "border-b-2 border-blue-600" : ""
           }`}
           onClick={() => handleLinkClick("contact")}
