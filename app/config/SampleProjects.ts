@@ -104,7 +104,7 @@ interface ProjectType1 {
       imageUrl: "/aichatbot.png"
     },
     {
-      slug: "resume generator",
+      slug: "resume-generator",
       title: "Resume Generator",
       description: "Create and customize professional resumes with real-time editing and image uploads. Designed for responsive, high-quality outputs.",
       technologies: ["Next.js", "React", "Tailwind CSS"],
@@ -122,7 +122,26 @@ interface ProjectType1 {
 
       liveUrl: "https://resume-builder-blue-eight.vercel.app/",
       imageUrl: "/resume.png"
-    },
+    },{
+      "slug": "ecommerce-webapp",
+      "title": "NextCommerce",
+      "description": "Create and customize your online store with features like real-time editing and secure payments. Designed for responsive, high-quality outputs.",
+      "technologies": ["Next.js", "Shadcn", "React", "Tailwind CSS", "Sanity", "Stripe"],
+      "content": `
+      # Next Commerce
+      
+      Next Commerce is a robust platform for creating and customizing your online store. It offers a user-friendly experience with real-time editing and secure payment integrations, ensuring a seamless and responsive shopping experience for your customers.
+    
+      ### Features:
+      - Real-time field editing
+      - Secure payment processing with Stripe
+      - Customizable product templates
+      - Responsive design for various devices
+      `,
+      liveUrl: "https://nextecommerce-psi.vercel.app/",
+      imageUrl: "/Ecommerce.png"
+    }
+    
   ];
   
   export default SampleProjects;
